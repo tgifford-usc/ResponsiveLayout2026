@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="Banner">
+        <div id="BannerContent">
+            <div id="Logo">
+                <span class="logo-title playfair-display-semibold">Creative Sparks</span>
+                <span class="logo-subtitle dm-sans-regular">Design Agency</span>
+            </div>
+            <button id="navToggle" aria-expanded="false" aria-controls="Nav" aria-label="Menu">☰</button>
+            <nav id="Nav">
+                <a href="#">Work</a>
+                <a href="#TeamSection">Team</a>
+                <a href="#ClientsSection">Clients</a>
+                <a href="#">Contact</a>
+                <button id="getInTouchButton">Get in Touch</button>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Hero">
+        <div id="HeroContent">
+            <span class="eyebrow dm-sans-regular">Est. 2012 · London & New York</span>
+            <div id="Headline">
+                <span class="headline playfair-display-semibold">We make ideas<br><span class="headline playfair-display-semibold-italic">unforgettable</span></span>
+            </div>
+            <div id="Byline">
+                Creative Sparks is a full-service design agency crafting visual identities, digital experiences, and campaigns that move people and grow brands.
+            </div>
+            <span class="body-text"></span>
+            <div id="CTAs">
+                <button id="viewOurWorkButton">View Our Work</button>
+                <button id="meetTheTeamButton">Meet the Team</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="TeamSection">
+        <div id="TeamSectionContent">
+            <div id="TeamSectionBanner">
+                <span class="section-title playfair-display-semibold" id="ourTeamTitle">Our Team</span>
+                <span id="ourTeamByline">Three specialists. One shared obsession - <br>design that works.</span>
+            </div>
+            <div id="TeamMembers">
+                <div class="team-member-card">
+                    <img class="team-member-image" src="images/TeamMember1.jpeg" alt />
+                    <div class="team-member-info">
+                        <span class="eyebrow">Creative Designer</span>
+                        <span class="team-member-name playfair-display-semibold">Maya Castillo</span>
+                        <span class="team-member-bio">A seasoned Creative Designer with 15+ years of experience, Maya specializes in digital media design, typography, and illustration. An alumnus of Rhode Island School of Design, she combines modern trends with a timeless aesthetic to create innovative and enduring designs.</span>
+                    </div>
+                
+                </div>
+
+                <div class="team-member-card">
+                    <img class="team-member-image" src="images/TeamMember2.jpeg" alt />
+                    <div class="team-member-info">
+                        <span class="eyebrow">Creative Director</span>
+                        <span class="team-member-name playfair-display-semibold">Leonardo Fletcher</span>
+                        <span class="team-member-bio">Leonardo is a dynamic Creative Director with dual expertise in visual design and strategic thinking. A Central Saint Martins graduate, he transforms abstract concepts into tangible solutions, employing design thinking as a catalyst for business growth and social change..</span>
+                    </div>
+                    </div>
+
+                <div class="team-member-card">
+                    <img class="team-member-image" src="images/TeamMember3.jpeg" alt />   
+                    <div class="team-member-info">
+                        <span class="eyebrow">UX/UI Designer</span>
+                        <span class="team-member-name playfair-display-semibold">Kiera Thompson</span>
+                        <span class="team-member-bio">A School of Visual Arts graduate, Kiera combines aesthetics with user-centric design to enhance user experience. Specializing in prototyping, user research, and interaction design, she simplifies the digital journey by blending functionality and beauty.</span>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+    </div>
+
+    <div id="ClientsSection">
+        <div id="ClientsSectionContent">
+            <div id="ClientsSectionBanner">
+                <span class="eyebrow">Trusted by</span>
+                <span class="section-title playfair-display-semibold" id="ClientsSectionTitle">Our Clients</span>
+            </div>
+            <div id="ClientIcons">
+                <img class="client-icon" src="images/ClientIcon1.png" alt />
+                <img class="client-icon" src="images/ClientIcon2.png" alt />
+                <img class="client-icon" src="images/ClientIcon3.png" alt />
+                <img class="client-icon" src="images/ClientIcon4.png" alt />
+                <img class="client-icon" src="images/ClientIcon5.png" alt />
+                <img class="client-icon" src="images/ClientIcon6.png" alt />
+                <img class="client-icon" src="images/ClientIcon7.png" alt />
+                <img class="client-icon" src="images/ClientIcon8.png" alt />
+            </div>
+        </div>
+    </div>
+
+    <div id="Footer">
+        <div id="FooterContent">
+            <span class="body-text">Creative Sparks Design Agency</span>
+            <span class="body-text">© 2026 All rights reserved</span>
+        </div>
+    </div>
+
+    <script>
+        const navToggle = document.getElementById("navToggle");
+        navToggle.addEventListener("click", () => {
+            const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+            navToggle.setAttribute("aria-expanded", String(!isOpen));
+        });
+    </script>
+</body>
+</html>
