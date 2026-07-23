@@ -55,7 +55,6 @@
   --section-padding-horizontal-tablet: 32px;
   --section-padding-horizontal-phone: 16px;
 
-
   /* responsive sizes */
   --heading1-size: var(--heading1-size-phone);
   --heading1-line-height: var(--heading1-line-height-phone);
@@ -83,7 +82,6 @@
   --banner-color: var(--neutral-700);
   --on-banner-color: var(--neutral-100);
   --highlight-on-banner-color: var(--neutral-000);
-  
 }
 
 
