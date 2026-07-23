@@ -22,49 +22,6 @@
   --neutral-700: #444240;
   --neutral-900: #171513;
 
-  /* font sizes */
-  --heading1-size-desktop: 72px;
-  --heading1-size-tablet: 72px;
-  --heading1-size-phone: 36px;
-
-  --heading1-line-height-desktop: 78px;
-  --heading1-line-height-tablet: 78px;
-  --heading1-line-height-phone: 40px;
-
-  --body-size-desktop: 20px;
-  --body-size-tablet: 20px; 
-  --body-size-phone: 14px;
-
-  --body-line-height-desktop: 32px;
-  --body-line-height-tablet: 32px;
-  --body-line-height-phone: 18px;
-
-  --heading2-size-desktop: 48px;
-  --heading2-size-tablet: 48px;
-  --heading2-size-phone: 24px;
-
-  --heading2-line-height-desktop: 60px;
-  --heading2-line-height-tablet: 60px;
-  --heading2-line-height-phone: 30px;
-
-  --section-padding-vertical-desktop: 112px;
-  --section-padding-vertical-tablet: 112px;
-  --section-padding-vertical-phone: 32px;
-
-  --section-padding-horizontal-desktop: 32px;
-  --section-padding-horizontal-tablet: 32px;
-  --section-padding-horizontal-phone: 16px;
-
-  /* responsive sizes */
-  --heading1-size: var(--heading1-size-phone);
-  --heading1-line-height: var(--heading1-line-height-phone);
-  --body-size: var(--body-size-phone);
-  --body-line-height: var(--body-line-height-phone);
-  --heading2-size: var(--heading2-size-phone);
-  --heading2-line-height: var(--heading2-line-height-phone);
-  --section-padding-vertical: var(--section-padding-vertical-phone);
-  --section-padding-horizontal: var(--section-padding-horizontal-phone);
-
   /* semantic colours */
   --background-color: var(--neutral-100);
   --on-background-color: var(--neutral-500);
@@ -82,9 +39,65 @@
   --banner-color: var(--neutral-700);
   --on-banner-color: var(--neutral-100);
   --highlight-on-banner-color: var(--neutral-000);
+
+  /* Desktop font sizes */
+  --heading1-size: 72px;
+  --heading1-line-height: 78px;
+  --body-size: 20px;
+  --body-line-height: 32px;
+  --heading2-size: 48px;
+  --heading2-line-height: 60px;
+  --logo-title-size: 20px;
+  --logo-title-line-height: 28px;
+  --logo-subtitle-size: 12px;
+  --logo-subtitle-line-height: 18px;
+  --button-label-size: 14px;
+  --button-label-line-height: 20px;
+  --eyebrow-size: 12px;
+  --eyebrow-line-height: 16px;
+  --small-size: 14px;
+  --small-line-height: 20px;
+  --navlink-size: 14px;
+  --navlink-line-height: 20px;
+  --heading3-size: 24px;
+  --heading3-line-height: 30px;
+  --section-padding-vertical: 112px;
+  --section-padding-horizontal: 0px;
+  --footer-padding-vertical: 40px;
+
+  /* font families and weights */
+  --navlink-family: "DM Sans", sans-serif;
+  --navlink-weight: 400;
+  --heading1-family: "Playfair Display", serif;
+  --heading1-weight: 600;
+  --heading2-family: "Playfair Display", serif;
+  --heading2-weight: 600;
+  --heading3-family: "Playfair Display", serif;
+  --heading3-weight: 500;
+  --body-family: "DM Sans", sans-serif;
+  --body-weight: 300;
+  --eyebrow-family: "DM Sans", sans-serif;
+  --eyebrow-weight: 400;
+  --logotitle-family: "Playfair Display", serif;
+  --logotitle-weight: 600;
+  --logosubtitle-family: "DM Sans", sans-serif;
+  --logosubtitle-weight: 400;
+  --buttonlabel-family: "DM Sans", sans-serif;
+  --buttonlabel-weight: 400;
+  --eyebrow-family: "DM Sans", sans-serif;
+  --eyebrow-weight: 400;
+  --small-family: "DM Sans", sans-serif;
+  --small-weight: 400;
+  --body-family: "DM Sans", sans-serif;
+  --body-weight: 300;
+  --heading2-family: "Playfair Display", serif;
+  --heading2-weight: 600;
+  --heading3-family: "Playfair Display", serif;
+  --heading3-weight: 500;
 }
 
 
+/* change colour scheme for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--neutral-700);
@@ -107,70 +120,150 @@
 }
 
 
-@media (min-width: 700px) {
+/* resize fonts and section padding for tablets */
+@media (max-width: 1124px) {
   :root {
-    --heading1-size: var(--heading1-size-tablet);
-    --heading1-line-height: var(--heading1-line-height-tablet);
-    --body-size: var(--body-size-tablet);
-    --body-line-height: var(--body-line-height-tablet);
-    --heading2-size: var(--heading2-size-tablet);
-    --heading2-line-height: var(--heading2-line-height-tablet);
-    --section-padding-vertical: var(--section-padding-vertical-tablet);
-    --section-padding-horizontal: var(--section-padding-horizontal-tablet);
+    --heading1-size: 72px;
+    --heading1-line-height: 78px;
+    --body-size: 20px;
+    --body-line-height: 32px;
+    --heading2-size: 48px;
+    --heading2-line-height: 60px;
+    --logo-title-size: 20px;
+    --logo-title-line-height: 28px;
+    --logo-subtitle-size: 12px;
+    --logo-subtitle-line-height: 18px;
+    --button-label-size: 14px;
+    --button-label-line-height: 20px;
+    --eyebrow-size: 12px;
+    --eyebrow-line-height: 16px;
+    --small-size: 14px;
+    --small-line-height: 20px;
+    --navlink-size: 14px;
+    --navlink-line-height: 20px;
+    --heading3-size: 24px;
+    --heading3-line-height: 30px;
+    --section-padding-vertical: 112px;
+    --section-padding-horizontal: 16px;
+    --footer-padding-vertical: 40px;
   }
 }
 
-@media (min-width: 1124px) {
+/* resize fonts and section padding for phones */
+@media (max-width: 700px) {
   :root {
-    --heading1-size: var(--heading1-size-desktop);
-    --heading1-line-height: var(--heading1-line-height-desktop);
-    --body-size: var(--body-size-desktop);
-    --body-line-height: var(--body-line-height-desktop);
-    --heading2-size: var(--heading2-size-desktop);
-    --heading2-line-height: var(--heading2-line-height-desktop);
-    --section-padding-vertical: var(--section-padding-vertical-desktop);
-    --section-padding-horizontal: var(--section-padding-horizontal-desktop);
+    --heading1-size: 36px;
+    --heading1-line-height: 40px;
+    --body-size: 14px;
+    --body-line-height: 18px;
+    --heading2-size: 24px;
+    --heading2-line-height: 30px;
+    --logo-title-size: 14px;
+    --logo-title-line-height: 20px;
+    --logosubtitlesize: 10px;
+    --logosubtitlelineheight: 16px;
+    --buttonlabelsize: 12px;
+    --buttonlabellineheight: 16px;
+    --eyebrowsize: 10px;
+    --eyebrowlineheight: 14px;
+    --smallsize: 12px;
+    --smalllineheight: 18px;
+    --navlinksize: 12px;
+    --navlinklineheight: 18px;
+    --heading3size: 16px;
+    --heading3linesize: 24px;
+    --sectionpaddingvertical: 32px;
+    --sectionpaddinghorizontal: 32px;
+    --footerpaddingvertical: 8px;
+
   }
 }
 
 
-.playfair-display-semibold {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+/* general layout and font styles */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: var(--section-padding-horizontal);
+  padding-right: var(--section-padding-horizontal);
+  padding-top: var(--section-padding-vertical);
+  padding-bottom: var(--section-padding-vertical);
 }
 
+.section-content {
+  max-width: 1124px;
+  width: 100%;
+  padding: 0px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.playfair-display-semibold-italic {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+.eyebrow {
+  font-family: var(--eyebrow-family);
+  font-size: var(--eyebrow-size);
+  font-weight: var(--eyebrow-weight);
+  line-height: var(--eyebrow-line-height);
+  text-transform: uppercase;
+}
+
+.heading1 {
+  font-family: var(--heading1-family);
+  font-size: var(--heading1-size);
+  font-weight: var(--heading1-weight);
+  line-height: var(--heading1-line-height);
+  letter-spacing: var(--heading1-letter-spacing);
+}
+
+.heading2 {
+  font-family: var(--heading2-family);
+  font-size: var(--heading2-size);
+  font-weight: var(--heading2-weight);
+  line-height: var(--heading2-line-height);
+  letter-spacing: var(--heading2-letter-spacing);
+}
+
+.heading3 {
+  font-family: var(--heading3-family);
+  font-size: var(--heading3-size);
+  font-weight: var(--heading3-weight);
+  line-height: var(--heading3-line-height);
+}
+
+.body {
+  font-family: var(--body-family);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-line-height);
+}
+
+.small {
+  font-family: var(--small-family);
+  font-size: var(--small-size);
+  font-weight: var(--small-weight);
+  line-height: var(--small-line-height);
+}
+
+.logo-title {
+  font-family: var(--logotitle-family);
+  font-size: var(--logo-title-size);
+  font-weight: var(--logo-title-weight);
+  line-height: var(--logo-title-line-height);
+}
+
+.logo-subtitle {
+  font-family: var(--logosubtitle-family);
+  font-size: var(--logo-subtitle-size);
+  font-weight: var(--logo-subtitle-weight);
+  line-height: var(--logo-subtitle-line-height);
+}
+
+.emphasis {
   font-style: italic;
-}
-
-
-.playfair-display-medium {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-.dm-sans-regular {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.dm-sans-light {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
 }
 
 
@@ -179,9 +272,8 @@ body {
   color: var(--on-background-color);
   font-size: var(--body-size);
   line-height: var(--body-line-height);
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: var(--body-family);
+  font-weight: var(--body-weight);
   font-style: normal;
   margin: 0;
 }
@@ -189,8 +281,8 @@ body {
 button {
   border: var(--border-color) 1px solid ;
   padding: 12px 24px;
-  font-size: var(--body-size);
-  line-height: var(--body-line-height);
+  font-size: var(--button-label-size);
+  line-height: var(--button-label-line-height);
   cursor: pointer;
   border-radius: 32px;
 }
@@ -247,16 +339,16 @@ img {
   letter-spacing: 3px;
 }
 
-.headline {
+/* .headline {
   font-size: var(--heading1-size);
   line-height: var(--heading1-line-height);
   color: var(--highlight-on-primary-color);
-}
+} */
 
-.section-title {
+/* .section-title {
   font-size: var(--heading2-size);
   line-height: var(--heading2-line-height);
-}
+} */
 
 #getInTouchButton {
   background-color: var(--banner-color);
@@ -291,23 +383,10 @@ img {
 #Hero {
   background-color: var(--primary-color);
   color: var(--on-primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: var(--section-padding-horizontal);
-  padding-right: var(--section-padding-horizontal);
-  padding-top: var(--section-padding-vertical);
-  padding-bottom: var(--section-padding-vertical);
 }
 
 #HeroContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: left ;
-  max-width: 1124px;
-  width: 100%;
+  align-items: flex-start;
 }
 
 #Headline {
@@ -335,23 +414,8 @@ img {
 #TeamSection {
   background-color: var(--background-color);
   color: var(--on-background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: var(--section-padding-horizontal);
-  padding-right: var(--section-padding-horizontal);
-  padding-top: var(--section-padding-vertical);
-  padding-bottom: var(--section-padding-vertical);
 }
 
-#TeamSectionContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 1124px;
-  width: 100%;
-}
 
 #TeamSectionBanner {
   display: flex;
@@ -359,17 +423,11 @@ img {
   align-items: baseline;
   justify-content: space-between;
   padding-bottom: 24px;
+  width: 100%;
 }
 
 #ourTeamTitle {
   color: var(--highlight-on-background-color);
-}
-
-#ourTeamByline {
-  font-size: 14px;
-  line-height: 20px;
-  width: 320px;
-  text-align: right;
 }
 
 #TeamMembers {
@@ -403,27 +461,18 @@ img {
   object-fit: cover;
 } */
 
-.team-member-name {
+/* .team-member-name {
   font-size: 24px;
 }
 
 .team-member-bio {
   font-size: 14px;
   line-height: 20px;
-}
+} */
 
 #ClientsSection {
   background-color: var(--secondary-color);
   color: var(--on-secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: var(--section-padding-horizontal);
-  padding-right: var(--section-padding-horizontal);
-  padding-top: var(--section-padding-vertical);
-  padding-bottom: var(--section-padding-vertical);
-
 }
 
 #ClientsSectionContent {
@@ -476,9 +525,9 @@ img {
   padding-bottom: 40px;
   padding-left: var(--section-padding-horizontal);
   padding-right: var(--section-padding-horizontal);
-  
+  padding-top: var(--footer-padding-vertical);
+  padding-bottom: var(--footer-padding-vertical);
 }
-
 
 #FooterContent {
   display: flex;
@@ -488,7 +537,6 @@ img {
   width: 100%;
   gap: 16px;
 }
-
 
 
 @media (min-width: 700px) {
