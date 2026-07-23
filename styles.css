@@ -339,17 +339,6 @@ img {
   letter-spacing: 3px;
 }
 
-/* .headline {
-  font-size: var(--heading1-size);
-  line-height: var(--heading1-line-height);
-  color: var(--highlight-on-primary-color);
-} */
-
-/* .section-title {
-  font-size: var(--heading2-size);
-  line-height: var(--heading2-line-height);
-} */
-
 #getInTouchButton {
   background-color: var(--banner-color);
   color: var(--on-banner-color);
@@ -456,20 +445,6 @@ img {
   gap: 8px;
 }
 
-/* .team-member-image {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-} */
-
-/* .team-member-name {
-  font-size: 24px;
-}
-
-.team-member-bio {
-  font-size: 14px;
-  line-height: 20px;
-} */
-
 #ClientsSection {
   background-color: var(--secondary-color);
   color: var(--on-secondary-color);
@@ -480,7 +455,6 @@ img {
   flex-direction: column;
   justify-content: space-between;
   max-width: 1124px;
-  /* width: 100%; */
   gap: 32px;
 }
 
@@ -560,9 +534,7 @@ img {
 }
 
 @media (min-width: 1124px) {
-
-
-
+  /* any further desktop-specific styles can go here */ 
 }
 
 
