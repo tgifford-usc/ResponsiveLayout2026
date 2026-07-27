@@ -381,6 +381,7 @@ img {
 #Headline {
   padding-top:24px;
   max-width: 600px;
+  color: var(--highlight-on-primary-color);
 }
 
 #Byline {
