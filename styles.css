@@ -78,10 +78,10 @@
   --body-weight: 300;
   --eyebrow-family: "DM Sans", sans-serif;
   --eyebrow-weight: 400;
-  --logotitle-family: "Playfair Display", serif;
-  --logotitle-weight: 600;
-  --logosubtitle-family: "DM Sans", sans-serif;
-  --logosubtitle-weight: 400;
+  --logo-title-family: "Playfair Display", serif;
+  --logo-title-weight: 600;
+  --logo-subtitle-family: "DM Sans", sans-serif;
+  --logo-subtitle-weight: 400;
   --buttonlabel-family: "DM Sans", sans-serif;
   --buttonlabel-weight: 400;
   --eyebrow-family: "DM Sans", sans-serif;
@@ -160,21 +160,21 @@
     --heading2-line-height: 30px;
     --logo-title-size: 14px;
     --logo-title-line-height: 20px;
-    --logosubtitlesize: 10px;
-    --logosubtitlelineheight: 16px;
-    --buttonlabelsize: 12px;
-    --buttonlabellineheight: 16px;
-    --eyebrowsize: 10px;
-    --eyebrowlineheight: 14px;
-    --smallsize: 12px;
-    --smalllineheight: 18px;
-    --navlinksize: 12px;
-    --navlinklineheight: 18px;
-    --heading3size: 16px;
-    --heading3linesize: 24px;
-    --sectionpaddingvertical: 32px;
-    --sectionpaddinghorizontal: 32px;
-    --footerpaddingvertical: 8px;
+    --logo-subtitle-size: 10px;
+    --logo-subtitle-line-height: 16px;
+    --button-label-size: 12px;
+    --button-label-line-height: 16px;
+    --eyebrow-size: 10px;
+    --eyebrow-line-height: 14px;
+    --small-size: 12px;
+    --small-line-height: 18px;
+    --navlink-size: 12px;
+    --navlink-line-height: 18px;
+    --heading3-size: 16px;
+    --heading3-line-height: 24px;
+    --section-padding-vertical: 32px;
+    --section-padding-horizontal: 32px;
+    --footer-padding-vertical: 8px;
 
   }
 }
@@ -196,7 +196,6 @@
   max-width: 1124px;
   width: 100%;
   padding: 0px;
-  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,14 +248,14 @@
 }
 
 .logo-title {
-  font-family: var(--logotitle-family);
+  font-family: var(--logo-title-family);
   font-size: var(--logo-title-size);
   font-weight: var(--logo-title-weight);
   line-height: var(--logo-title-line-height);
 }
 
 .logo-subtitle {
-  font-family: var(--logosubtitle-family);
+  font-family: var(--logo-subtitle-family);
   font-size: var(--logo-subtitle-size);
   font-weight: var(--logo-subtitle-weight);
   line-height: var(--logo-subtitle-line-height);
@@ -325,19 +324,16 @@ img {
 }
 
 
-.eyebrow {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
 #getInTouchButton {
   background-color: var(--banner-color);
   color: var(--on-banner-color);
   padding: 8px 16px;
 }
 
+/* the hamburger button is only needed on phones, so it is hidden by
+   default and revealed by the phone overrides at the end of this file */
 #navToggle {
+  display: none;
   background: none;
   border: none;
   color: var(--on-banner-color);
@@ -346,19 +342,11 @@ img {
   padding: 8px;
 }
 
-/* menu visibility is driven by the toggle button's aria-expanded
-   attribute, which the script in index.html flips on click */
 #Nav {
-  display: none;
-  flex-basis: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-#navToggle[aria-expanded="true"] + #Nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
 }
 
 #Hero {
@@ -465,7 +453,7 @@ img {
 
 #ClientIcons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
 }
 
@@ -506,28 +494,36 @@ img {
 }
 
 
-@media (min-width: 700px) {
+/* layout overrides for tablets */
+@media (max-width: 1124px) {
+  /* any tablet-specific layout overrides can go here */
+}
+
+/* layout overrides for phones */
+@media (max-width: 700px) {
   #navToggle {
-    display: none;
+    display: block;
   }
 
+  /* the nav collapses into the hamburger menu: it is hidden until the
+     toggle button's aria-expanded attribute is flipped to "true" by the
+     script in index.html, and it wraps onto its own row when shown */
   #Nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  #navToggle[aria-expanded="true"] + #Nav {
     display: flex;
-    flex-basis: auto;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-    padding-bottom: 0;
   }
 
   #ClientIcons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
-}
-
-@media (min-width: 1124px) {
-  /* any further desktop-specific styles can go here */ 
 }
 
 
