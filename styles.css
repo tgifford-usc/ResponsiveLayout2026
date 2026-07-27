@@ -23,22 +23,22 @@
   --neutral-900: #171513;
 
   /* semantic colours */
-  --background-color: var(--neutral-100);
-  --on-background-color: var(--neutral-500);
-  --highlight-on-background-color: var(--neutral-900);
-  --surface-color: var(--purple-600);
-  --on-surface-color: var(--neutral-100);
-  --highlight-on-surface-color: var(--neutral-900);
-  --primary-color: var(--purple-700);
-  --on-primary-color: var(--neutral-300);
-  --highlight-on-primary-color: var(--neutral-000);
-  --secondary-color: var(--purple-200);
-  --on-secondary-color: var(--neutral-500);
-  --highlight-on-secondary-color: var(--neutral-900);
-  --border-color: var(--neutral-300);
-  --banner-color: var(--neutral-700);
-  --on-banner-color: var(--neutral-100);
-  --highlight-on-banner-color: var(--neutral-000);
+  --background: var(--neutral-100);
+  --on-background: var(--neutral-500);
+  --highlight-on-background: var(--neutral-900);
+  --surface: var(--purple-600);
+  --on-surface: var(--neutral-100);
+  --highlight-on-surface: var(--neutral-900);
+  --primary: var(--purple-700);
+  --on-primary: var(--neutral-300);
+  --highlight-on-primary: var(--neutral-000);
+  --secondary: var(--purple-200);
+  --on-secondary: var(--neutral-500);
+  --highlight-on-secondary: var(--neutral-900);
+  --border: var(--neutral-300);
+  --banner: var(--neutral-700);
+  --on-banner: var(--neutral-100);
+  --highlight-on-banner: var(--neutral-000);
 
   /* Desktop font sizes */
   --heading1-size: 72px;
@@ -100,22 +100,22 @@
 /* change colour scheme for dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: var(--neutral-700);
-    --on-background-color: var(--neutral-300);
-    --highlight-on-background-color: var(--neutral-000);
-    --surface-color: var(--purple-600);
-    --on-surface-color: var(--neutral-700);
-    --highlight-on-surface-color: var(--neutral-000);
-    --primary-color: var(--purple-500);
-    --on-primary-color: var(--neutral-700);
-    --highlight-on-primary-color: var(--neutral-900);
-    --secondary-color: var(--purple-800);
-    --on-secondary-color: var(--neutral-100);
-    --highlight-on-secondary-color: var(--neutral-000);
-    --border-color: var(--neutral-500);
-    --banner-color: var(--neutral-700);
-    --on-banner-color: var(--neutral-100);
-    --highlight-on-banner-color: var(--neutral-000);
+    --background: var(--neutral-700);
+    --on-background: var(--neutral-300);
+    --highlight-on-background: var(--neutral-000);
+    --surface: var(--purple-600);
+    --on-surface: var(--neutral-700);
+    --highlight-on-surface: var(--neutral-000);
+    --primary: var(--purple-500);
+    --on-primary: var(--neutral-700);
+    --highlight-on-primary: var(--neutral-900);
+    --secondary: var(--purple-800);
+    --on-secondary: var(--neutral-100);
+    --highlight-on-secondary: var(--neutral-000);
+    --border: var(--neutral-500);
+    --banner: var(--neutral-700);
+    --on-banner: var(--neutral-100);
+    --highlight-on-banner: var(--neutral-000);
   }
 }
 
@@ -267,8 +267,8 @@
 
 
 body {
-  background-color: var(--background-color);
-  color: var(--on-background-color);
+  background-color: var(--background);
+  color: var(--on-background);
   font-size: var(--body-size);
   line-height: var(--body-line-height);
   font-family: var(--body-family);
@@ -278,7 +278,7 @@ body {
 }
 
 button {
-  border: var(--border-color) 1px solid ;
+  border: var(--border) 1px solid ;
   padding: 12px 24px;
   font-size: var(--button-label-size);
   line-height: var(--button-label-line-height);
@@ -291,8 +291,8 @@ img {
 }
 
 #Banner {
-  background-color: var(--banner-color);
-  color: var(--on-banner-color);
+  background-color: var(--banner);
+  color: var(--on-banner);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,7 +303,7 @@ img {
 
 #Banner a {
   text-decoration: none;
-  color: var(--on-banner-color);
+  color: var(--on-banner);
 }
 
 #BannerContent {
@@ -325,8 +325,8 @@ img {
 
 
 #getInTouchButton {
-  background-color: var(--banner-color);
-  color: var(--on-banner-color);
+  background-color: var(--banner);
+  color: var(--on-banner);
   padding: 8px 16px;
 }
 
@@ -336,7 +336,7 @@ img {
   display: none;
   background: none;
   border: none;
-  color: var(--on-banner-color);
+  color: var(--on-banner);
   font-size: 24px;
   line-height: 1;
   padding: 8px;
@@ -350,8 +350,8 @@ img {
 }
 
 #Hero {
-  background-color: var(--primary-color);
-  color: var(--on-primary-color);
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 #HeroContent {
@@ -361,7 +361,7 @@ img {
 #Headline {
   padding-top:24px;
   max-width: 600px;
-  color: var(--highlight-on-primary-color);
+  color: var(--highlight-on-primary);
 }
 
 #Byline {
@@ -377,13 +377,13 @@ img {
 }
 
 #meetTheTeamButton {
-  background-color: var(--primary-color);
-  color: var(--on-primary-color);
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 #TeamSection {
-  background-color: var(--background-color);
-  color: var(--on-background-color);
+  background-color: var(--background);
+  color: var(--on-background);
 }
 
 
@@ -397,7 +397,7 @@ img {
 }
 
 #ourTeamTitle {
-  color: var(--highlight-on-background-color);
+  color: var(--highlight-on-background);
 }
 
 #TeamMembers {
@@ -409,8 +409,8 @@ img {
 }
 
 .team-member-card {
-  background-color: var(--surface-color);
-  color: var(--on-surface-color);
+  background-color: var(--surface);
+  color: var(--on-surface);
   display: flex;
   flex-direction: column;
   border-radius: 32px;
@@ -427,8 +427,8 @@ img {
 }
 
 #ClientsSection {
-  background-color: var(--secondary-color);
-  color: var(--on-secondary-color);
+  background-color: var(--secondary);
+  color: var(--on-secondary);
 }
 
 #ClientsSectionContent {
@@ -440,7 +440,7 @@ img {
 }
 
 #ClientsSectionTitle {
-  color: var(--highlight-on-secondary-color);
+  color: var(--highlight-on-secondary);
 }
 
 
@@ -468,8 +468,8 @@ img {
 
 
 #Footer {
-  background-color: var(--banner-color);
-  color: var(--on-banner-color);
+  background-color: var(--banner);
+  color: var(--on-banner);
   font-size: 14px;
   line-height: 20px;
   display: flex;
